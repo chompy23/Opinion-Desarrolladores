@@ -25,6 +25,6 @@ const figura1 = [
     }
 ]
 
-export default function datos() {
+export  function datos() {
     return figura1;
 }

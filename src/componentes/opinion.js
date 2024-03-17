@@ -3,9 +3,7 @@ import "../hojas de Estilo/opinion.css";
 
  
 function Opiniones(props) {
-   const cadena1 = props.opinion;
-     
-console.log(cadena1);
+   
   return (
     <div className="contenedor-opiniones">
       <img

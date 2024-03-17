@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Opiniones from "./componentes/opinion";
-import datos from "./componentes/datos";
+import {datos} from "./componentes/datos";
 
 const dato = datos();
 
