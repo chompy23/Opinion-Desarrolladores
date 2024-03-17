@@ -3,9 +3,10 @@ import "./App.css";
 import Opiniones from "./componentes/opinion";
 import datos from "./componentes/datos";
 
-function App() {
-  const dato = datos();
+const dato = datos();
 
+
+function App() {
   return (
     <div className="App">
       <div className="contenedor-principal">

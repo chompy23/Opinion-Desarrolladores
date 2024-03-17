@@ -1,14 +1,19 @@
 import React from "react";
 import "../hojas de Estilo/opinion.css";
 
+ 
 function Opiniones(props) {
+   const cadena1 = props.opinion;
+     
+console.log(cadena1);
   return (
     <div className="contenedor-opiniones">
       <img
         className="contenedor-imagenes"
         src={require(`../imagenes/${props.imagen}.png`)}
-                alt={`"Foto de" ${props.nombre}`} />
-            <div className="contenedor-texto-opiniones">
+        alt={`"Foto de" ${props.nombre}`}
+      />
+      <div className="contenedor-texto-opiniones">
         <p className="lugar-pais">
           <strong>{props.nombre}</strong> en {props.pais}
         </p>
