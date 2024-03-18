@@ -1,9 +1,13 @@
 import React from "react";
 import "../hojas de Estilo/opinion.css";
+var index;
+function cadenas(cade,index) {
+  return cade.slice(0, (52 - index));
+}
 
- 
 function Opiniones(props) {
-   
+  const cade = props.opinion;
+  
   return (
     <div className="contenedor-opiniones">
       <img
@@ -18,7 +22,7 @@ function Opiniones(props) {
         <p className="puesto-developer">
           {props.cargo} en <strong>{props.empresa}</strong>
         </p>
-        <p className="texto-comentario">"{props.opinion}"</p>
+        <p className="texto-comentario">"<strong>{cadenas(cade,0)}</strong>{cade.replace(cadenas(cade, 0),"")}"</p>
       </div>
     </div>
   );
